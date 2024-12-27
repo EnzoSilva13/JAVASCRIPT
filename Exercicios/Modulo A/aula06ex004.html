@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formatando Numeros</h1>
+    <p>Algumas formataçoes de numeros</p>
+    <script>
+       var n1= Number(window.prompt(`valor sem correçoes `)) 
+       document.write(` valor com uma casa decimal a mais ${n1.toFixed(2)} <br>`)
+        document.write(`agora vamos trocar o ponto por virgula ${n1.toFixed(2).replace ('.', ',')} <br>`)
+        document.write(`agora vamos colocar em valores monetarios <br> ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>`)
+        document.write(` ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})} <br>`)
+        document.write(` ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'DOL'})}`)
+        
+    </script>
+    
+</body>
+</html>
