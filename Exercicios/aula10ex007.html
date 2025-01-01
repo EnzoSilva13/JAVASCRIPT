@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            background-color: rgb(95, 95, 95)
+        }
+        #somar{
+            
+
+           
+            &#somar:hover{
+            background-color: rgb(53, 52, 52);
+            transition-duration: 0.2s;
+
+        }
+    }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="textn1" id="textn1">
+    
+    <input type="number" name="textn2" id="textn2">
+    
+   <input type="button" value="somar" onclick="somar()" id="somar">
+
+   <div id="res">Resultado</div>
+
+   <script>
+    function somar() {
+    var t1 = window.document.getElementById('textn1')
+    var t2 = window.document.querySelector('input#textn2')
+    var res = window.document.getElementById('res')
+    var n1= Number(t1.value)
+    var n2= Number(t2.value)
+    var s = n1 + n2
+    res.innerHTML =  `${s}`
+   }
+   </script>
+    
+</body>
+</html>
