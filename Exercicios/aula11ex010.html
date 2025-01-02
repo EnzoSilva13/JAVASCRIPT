@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transito</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>velocidade do carro:<input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar" onclick="calcular"></p>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+        var vel = window.document.getElementById('vel')
+        var res= window.document.getElementById('res')
+        var val = Number(vel.value)
+        res.innerHTML = `<p>Sua velocidade atual é ${val} km/h</p>`
+        if(val>=80){
+            res.innerHTML = '<p>VOCE ULTRAPASSOU A VELOCIDADE, ESTA MULTADO</p>'
+        }else{
+            res.innerHTML = '<p>ESTA NA LEI</p>'
+        }
+        res.innerHTML = '<p> Use sempre o cinto de segurança!</p>'
+        
+        }
+
+    </script>
+    
+</body>
+</html>
