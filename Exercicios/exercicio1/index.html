@@ -4,50 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario</title>
-    <style>
-        body{
-            width: 600px;
-            text-align: center;
-            background-color: rgb(31, 100, 180);
-            margin: auto;
-            font-family: Arial, Helvetica, sans-serif;
-           
-        }
-        header{
-           
-            color: white;
-            text-shadow: 2px 2px 2px black;
-           
-        }
-        section{
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            margin: auto;
-            border-radius: 5px;
-            box-shadow: 2px 2px 2px black;
-            
-            
-            
-        }
-        footer{
-            color: white;
-            text-shadow: 1px 1px 1px black;
-        }    
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Que Horas São?</h1>
     </header>
     <section>
-        <div></div>
-        <div></div>
+        <div id="msg">
+            aqui vai aparecer a mensagem...
+        </div>
+        <div id="foto">
+            <img id="imagem" src="imagens/manha.png" alt="Foto da manha">
+        </div>
     </section>
     <footer>
         <p>Feito por Enzo Silva</p>
     </footer>
+    <script src="script.js"></script>
+
 
     
     
