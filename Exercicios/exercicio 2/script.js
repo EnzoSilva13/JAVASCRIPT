@@ -2,12 +2,10 @@ function carregar(){
 var msg= window.document.getElementById('msg')
 var foto= window.document.getElementById('foto')
 
-var anostrg = window.document.getElementById('txt')
-var ano = Number(anostrg.value)
-var anoatual = 2025
-var idade = anoatual - ano
+var data = new Date()
+var ano = window.document.getElementById('txt')
+var ano = Number(ano.value)
 
-if(idade >= 0 && idade <= 12){
-    msg.innerHTML = 'criança'
-}
+
+msg.innerHTML= `sua idade é ${ano} anos`
 }
