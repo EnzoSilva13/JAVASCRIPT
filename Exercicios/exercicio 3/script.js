@@ -1,14 +1,15 @@
-function calcular(){
-    var nome = document.getElementById('nome')
-    var alturaum = document.getElementById('alt')
-    var altura = Number(alturaum.value)
-    
-    var pesoum = document.getElementById('peso')
-    var peso = Number(pesoum.value)
+function verificar(){
+    var min = document.getElementById('min')
+    var min = Number(min.value)
+    var max = document.getElementById('max')
+    var max = Number(max.value)
+    var pas = document.getElementById('pas')
+    var pas = Number(pas.value)
 
-    var imc= peso / (altura*altura) 
-
-    if(imc < 18,5){
-        
+    while(min < max){
+        res.inn 
     }
+
+
+   
 }

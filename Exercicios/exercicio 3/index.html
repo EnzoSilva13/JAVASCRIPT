@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
+    <title>Idadometro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="principal">
-        <h1>Calculadora IMC</h1>
-        Nome: <input type="text" name="nome" id="nome" class="bloco"> <br>
-        Altura:<input type="number" name="alt" id="alt" class="bloco"> <br>
-        Peso: <input type="number" name="peso" id="peso" class="bloco"> <br>
-        <input type="button" value="calcular" id="botao" onclick="calcular()">
+<body >
+    <header>
+        <h1>Contador de Numeros</h1>
+    </header>
+    <section>
+        <div>
+            <label for="min">Minimo</label>
+            <input type="number" name="numeros" id="min" min="0"> <br><br>
+            
+            <label for="max">Maximo</label>
+            <input type="number" name="numeros" id="max" min="0"> <br><br>
+            
+            <label for="pas">passos</label>
+            <input type="number" name="numeros" id="pas" min="0"> <br><br>
 
-        <div id="res" onclick="calcular()">
 
+            <input type="button" value="verificar"  onclick="verificar()"> 
+            
         </div>
-        <script src="script.js"></script>
-    </div>
+
+        <div id="res">
+           digite os valores acima
+        </div>
+
+    </section>
+    
+    <script src="script.js"></script>
     
 </body>
 </html>
