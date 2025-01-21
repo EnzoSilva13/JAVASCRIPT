@@ -12,14 +12,21 @@ function confirmar(){
         let i = Number(min.value)
         let f = Number(fim.value)
         let p = Number(pas.value)
-    }
-
-       
+    
+        if(i < f){
             for(c = i; c <= f; c += p){
-            res.innerHTML += `${c}  \u{1F449} `
+                res.innerHTML += `${c}  \u{1F449} `
         }
-         res.innerHTML += `\u{1F3C1}`
+        } else {
+            for(c = i; c >= f; c-= p){
+                res.innerHTML += ` ${c} \u{1F449} `
+            }
         }
+    
+    
+    } 
+                 res.innerHTML += `\u{1F3C1}`
+}
        
             
 
