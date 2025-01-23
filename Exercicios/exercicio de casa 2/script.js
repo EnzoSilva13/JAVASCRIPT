@@ -1,12 +1,20 @@
-var foto = document.getElementById('foto')
-var img = document.createElement('img')
-img.src = 'desligada.jpg'
-foto.appendChild(img)
+var img = document.getElementById('img')
 
 function ligar(){
     
-    var img = document.createElement('img')
-    img.src = 'ligada.jpg'
-    foto.appendChild(img)
-}    
+    if(img.src = 'desligada.jpg'){
+        img.src = 'ligada.jpg'
+    }
+}
+function desligar(){
+    if(img.src = 'ligada.jpg'){
+        img.src =  'desligada.jpg'
+    }
+}
+function quebrar(){
+    if(img.src = 'ligada.jpg' || img.src == 'desligada.jpg'){
+        img.src = 'quebrada.jpg'
+    }
+}
+
 
