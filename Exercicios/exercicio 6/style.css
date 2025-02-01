@@ -23,6 +23,9 @@ section{
     box-shadow: 2px 4px 2px black;
     padding-left: 10px;
 }
+select{
+    width: 80px;
+}
 footer{
     padding-top: 20px;
     color: white;
